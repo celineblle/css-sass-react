@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$font: "Roboto", sans-serif;
+
+@mixin flex {
+  display: flex;
+}
+
+* {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+.subTexte {
+  font-family: $font;
+  color: grey;
+
+  .note {
+    font-size: 9pt;
+  }
+
+  .titleDescription {
+    font-size: 12pt;
+  }
+  .titleDescription::first-line {
+    font-size: 20px;
+    color: black;
+  }
+
+  h1,
+  h2,
+  button,
+  .lien {
+    color: black;
+  }
+
+  .lien:hover {
+    color: violet;
+  }
+
+  margin: 2vh;
+}
+
+.noteAndStars {
+  @include flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .note,
+  .stars {
+    margin: 2px;
+  }
+
+  .stars {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+button {
+  background-color: lightgrey;
+  border: 0px;
+  border-radius: 17px;
+  padding: 8px 14px 8px 14px;
+  margin: 1vh;
+  margin-top: 1.5vh;
+}
+
+.entete,
+.titleDescription,
+.endElement {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
